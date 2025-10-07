@@ -1,5 +1,5 @@
 <link rel="import" href="../../styles/shared-styles.html">
-<dom-module id="admixture-map">
+<dom-module id="admixture-map-arenosa">
   <template>
     <style include="shared-styles"></style>
     <style>
@@ -135,7 +135,7 @@
       '#9467bd','#8c564b','#e377c2','#7f7f7f','#bcbd22','#17becf'];
 
       Polymer({
-        is: 'admixture-map',
+        is: 'admixture-map-arenosa',
 
         properties: {
           markers: {
@@ -330,8 +330,7 @@
         _getTitleFromMarker: function(marker) {
           return 'Name: ' + marker.name + ' (' + marker.accId + ')';
         },
-        _sortLegend: function(a, b) {
-          if (a.label === 'Relict') {
+        _sortLegend: function(a, b) { if (a.label === 'Relict') {
             return 1;
           }
           if (b.label === 'Relict') {
