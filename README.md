@@ -1,20 +1,19 @@
-The 1001 Genomes Admixture Map
+_Arabidopsis arenosa_ Admixture Map
 ==
-The [1001 Genomes Admixture Map](http://1001genomes.github.io/admixture-map/) is an interactive web-based tool, that allows to interactively explore the fine-scale picture of population structure for the 1135 _A. thaliana_ accession that are part of the [1001 genomes project](http://1001genomes.org/).
+The population map is constructed using the implementation from the [1001 genomes project](http://1001genomes.org/).
 
-The data was generated using the software package [ADMIXTURE](https://www.genetics.ucla.edu/software/admixture/) and stored in a [Google spreadsheet](https://docs.google.com/spreadsheets/d/1_jp6KKfUC0z1WteS9HUIp4f3ssFZlCV3KXPIvrTW0Fk/edit?usp=sharing).
+The population data represented on the piecharts was generated using software [Entropy](https://doi.org/10.1111/1755-0998.13330).
+
+The following help message is cited from [1001 Genomes project admixture map](https://github.com/1001genomes/admixture-map) with changes according to the present dataset.
 
 ![Admixture-map](https://raw.githubusercontent.com/1001genomes/admixture-map/master/preview.gif "1001 Genomes Admixture Map")
 
-For each accession a piechart is displayed. The slices correspond to the various fractions of the ADMIXTURE cluster.
-Users can change the number of clusters K by clicking on the gear icon in the top left corner (by default data for K=9 is shown).
+For each population a piechart is displayed. The slices correspond to the various fractions of the Entropy cluster. Users can change the number of clusters K by clicking on the gear icon in the top left corner (by default data for K=6 is shown).
 
-For K=9, clusters were named post-hoc according to geography. These clusters were also used to attribute individuals to groups. An individual for which more than 60% of its genome derives from a given cluster is attributed to the group of the same name as the cluster. Individuals which do not draw more than 60% from a single cluster were labelled "admixed".
+For K=6, clusters were named post-hoc according to geography. These clusters were also used to attribute individuals to groups. An individual for which more than 60% of its genome derives from a given cluster is attributed to the group of the same name as the cluster. Individuals which do not draw more than 60% from a single cluster were labelled "admixed".
 
-Because of the number of accessions (1135) nearby accessions are clustered together and an averaged piechart is displayed. The number inside the piechart shows the number of accessions that are clustered together. Clicking on a cluster will zoom into the region and display piecharts for individual accessions or smaller clusters.
+Because of the number of populations nearby locations are clustered together and an averaged piechart is displayed. The number inside the piechart shows the number of samples that are clustered together. Clicking on a cluster will zoom into the region and display piecharts for individual populations or smaller clusters.
 
-The list on the left side shows all accessions that are visible in the current view. Zooming into specific regions either by clicking on a cluster or using the Google Maps zoom control will update the list.
-Hovering the mouse over a cluster will filter the list to display only the accessions that are part of the corresponding cluster and in addition to show a popup with a more detailed version of the piechart.
+The list on the left side shows all samples that are visible in the current view. Zooming into specific regions either by clicking on a cluster or using the Google Maps zoom control will update the list. Hovering the mouse over a cluster will filter the list to display only the samples that are part of the corresponding cluster and in addition to show a popup with a more detailed version of the piechart.
 
-Hovering the mouse over an accession in the list will display a pin on the map at its location and clicking on the list item will zoom into that position.
-A searchbox above the list allows the user to search for a specific accession using either the ID or the name.
+Hovering the mouse over a sample in the list will display a pin on the map at its location and clicking on the list item will zoom into that position. A searchbox above the list allows the user to search for a specific sample using either the ID or the name.
